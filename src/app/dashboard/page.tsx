@@ -22,10 +22,10 @@ export default async function DashboardPage() {
   return (
     <>
       <nav className="topbar">
-        <div className="topbar-brand">
+        <a className="topbar-brand" href="https://muze-ops-portal.vercel.app" style={{ textDecoration: "none", color: "inherit" }}>
           <div className="topbar-logo">M</div>
           <span className="topbar-title">Muze Ops Portal — KTC Monthly Report</span>
-        </div>
+        </a>
         <div className="topbar-right">
           <span className="topbar-email">{session.user?.email}</span>
           <form
